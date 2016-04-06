@@ -70,7 +70,7 @@ features = scaler.fit_transform(features)
 features_train, features_test, labels_train, labels_test = train_test_split(features,labels, test_size=0.3, random_state=42)
 
 # Selecting the best features using SelectKBest
-k_best = SelectKBest(k = 11)
+k_best = SelectKBest(k = 12)
 features_train = k_best.fit_transform(features_train,labels_train)
 scores = k_best.scores_
 unsorted_pairs = zip(features_list[1:], scores)
