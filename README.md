@@ -79,7 +79,11 @@ For this project I manually tuned two parameters of Decision Tree namely `splitt
 
 > What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?
 
-Validation is performed to ensure that a machine learning algorithm generalizes well.  A classic mistake is over-fitting, where the model is trained and performs very well on the training dataset, but markedly worse on the cross-validation and test datasets. I performed validation in this project by splitting the dataset into training and testing dataset.
+Validation is performed to ensure that a machine learning algorithm generalizes well.  A classic mistake is over-fitting, where the model is trained and performs very well on the training dataset, but markedly worse on the cross-validation and test datasets.
+
+To validate my analysis I used stratified shuffle split cross validation developed by Udacity and defined in tester.py file. In this cross-validation method, the specified number of randomized folds are created in such a way that the percentage of samples for each class are preserved across folds. Whereas in stratified kfolds the sample is divided in to k folds of equal sizes and each fold is used as the test sample alternatively. Stratified shuffle split, used in this project, is a better cross validation since it gives finer control on the number of iterations and the proportion of samples in on each side of the train/test split.
+
+
 
 > Give at least 2 evaluation metrics and your average performance for each of them.  Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance.
 
