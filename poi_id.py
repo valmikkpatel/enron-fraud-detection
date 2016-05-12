@@ -88,7 +88,7 @@ features_test = k_best.transform(features_test)
 
 
 # Decision Tree Classifier
-parameters = {'min_samples_split':[2, 5, 10, 25]}
+parameters = {'min_samples_split':	}
 dt = DecisionTreeClassifier(splitter = 'best', criterion = 'entropy')
 dt_clf = grid_search.GridSearchCV(dt, parameters)
 dt_clf.fit(features_train,labels_train)
