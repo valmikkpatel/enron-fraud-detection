@@ -56,27 +56,6 @@ In order to optimize and select the most important features I used the `SelectKB
 
 After looking at the scores I decided to keep the threshhold at 5 and selected the top 12 features to be used in the final algorithm since the other features had extremely less importance.
 
-
-
-> What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms? 
-
-The final algorithm that I ended up using was Decision Tree. Apart from this I also tried Support Vector Machines and Gaussian Naive Bayes algorithms. Below are the performances of the algorithms.
-
-| Algorithm | Precision | Recall |
-| :-------- | --------- | -----: |
-| Decision Tree | 0.375 | 0.6 |
-| Support Vector Machines | 0.333 | 0.2 |
-| Gaussian Naive Bayes | 0.4 | 0.4 |
-
-I took the decision to use Decision Tree as the final algorithm based on the above data.
-
-
-> What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? 
-
-Tuning the parameters of an algorithm is basically adjusting the values of different parameters to find the set of parameters that give the best performance for the given dataset. It is important to tune the parameters to get optimum performance.
-
-For this project I manually tuned two parameters of Decision Tree namely `splitter` and `criterion`. I also used `GridSearchCV` to tune the `min_samples_split` parameter. The 5 settings investigated for `min_samples_split` were [2, 5, 10, 25].
-
 > What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?
 
 Validation is performed to ensure that a machine learning algorithm generalizes well.  A classic mistake is over-fitting, where the model is trained and performs very well on the training dataset, but markedly worse on the cross-validation and test datasets.
