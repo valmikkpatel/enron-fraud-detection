@@ -1,7 +1,7 @@
-##Identifying Fraud from Enron Email Data
+## Identifying Fraud from Enron Email Data
 for Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/nd002), Project 5
 
-###Introduction
+### Introduction
 
 Enron scandal has been one of the biggest financial scandal in history. It went bankrupt from a maximum valuation of $70 billion due to wisespread internal fraud and corruption. Due to resulting investigation and legal proceedings a significant amount of confidential information entered public domain.
 
@@ -18,7 +18,7 @@ The Enron dataset contains 146 Enron employees to investigate. Each sample in th
 Outliers were found in the dataset by visualizing the financial data and combing through the list manually. Overall I was able to identify 3 outliers mentioned below.
 
 - `TOTAL` : This record had extremely high values for financial data since it was a total of all records. There were other records with high values for financial data but those were executive employees who made large amounts of money.
-- `THE TRAVEL AGENCY IN THE PARK` : This record did not represent an employee and wasa found by manual combing.
+- `THE TRAVEL AGENCY IN THE PARK` : This record did not represent an employee and was found by manual combing.
 - `LOCKHART EUGENE E` : This entry contained no data and was founf by manual combing.
 
 
